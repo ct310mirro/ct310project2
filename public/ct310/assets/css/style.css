@@ -1,0 +1,784 @@
+html {
+  min-width: 1150px; /* prevents cutoffs by minimizing browser any further */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto; /* Centers everything */
+  font-size: 16px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* All sections centered */
+#top, #bottom, #footer-section, footer {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Image Captions */
+.attraction-caption {
+  width:170px;
+  float:right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8px;
+  padding-bottom: 8px;
+
+} .seal-caption {
+  width: 140px;
+  float:left;
+  padding: 7px;
+  font-size: 12px;
+  font-family: verdana;
+  font-weight: bold;
+
+} span.acknowledgement-seal {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+
+} span.acknowledgement {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-top: 8px;
+
+} .caption-flag, span.caption-logo {
+  display: block;
+
+} .caption-login {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  font-family: verdana;
+
+} .caption-login a {
+  color: white;
+}
+
+/*****************************************************************
+************************* Top Section ****************************
+*****************************************************************/
+
+/* Main Div */
+#top {
+  position: relative;
+  height:153px;
+}
+
+
+/* text: Indiana */
+header {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+  /*text-shadow: 2px 2px 3px rgba(255, 255, 255,0.1);*/
+  /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
+  /*text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
+  text-shadow: 0px 3px 0px #b2a98f,
+               0px 14px 10px rgba(0,0,0,0.15),
+               0px 24px 2px rgba(0,0,0,0.1),
+               0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.welcome h1 {
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  font-size: 30px;
+}
+
+
+/* Navigation Menu */
+nav {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+
+} nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+} nav ul li {
+  display: inline;
+
+} nav ul li a {
+  color: #6a6760;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 25%;
+  height: 80px;
+  line-height:1;
+  text-decoration: none;
+  padding: 20px;
+
+} nav ul li a:hover {
+  text-shadow: 2px 3px 4px #999999;
+
+}
+
+
+
+/*****************************************************************
+********************* WALLPAPER Section **************************
+*****************************************************************/
+
+/* Main Div */
+#background {
+  position: relative;
+  background-image: url("../img/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+
+/* text: Explore Things To Do */
+#background p{
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  top: 48%;
+  left: 55%;
+  margin-left: -450px;
+  width: 500px;
+}
+
+#background p:before {
+  position: absolute;
+  left: -1em;
+  top: .25em;
+  width: .75em;
+  height: .75em;
+  bottom: .2em;
+  background: #fbb52b;
+  content: "";
+}
+
+
+/*****************************************************************
+*********************** Welcome Section **************************
+*****************************************************************/
+
+/* Main Div */
+#bottom {
+  font-family: verdana;
+}
+
+/* Content styling */
+.welcome p {
+  margin: 0 0 50px 0;
+  width: 100%;
+  color: #6a6760;
+  text-align: justify;
+}
+
+
+/*****************************************************************
+*********************** Featured Section *************************
+*****************************************************************/
+
+/* Outer Div to keep things centered */
+#featured-section {
+  position: relative;
+  height: 730px;
+  width: 100%;
+
+}
+
+
+/* Blue bar below text: Featured Content */
+.top-border {
+  background-color: #0f7ba2;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  height: 6px;
+  width: 120px;
+}
+
+
+/* Inner div structure (the box look) */
+#featured-position1, #featured-position2, #featured-position3, #featured-position4 {
+  position: absolute;
+  height: 46%;
+  width: 550px;
+}
+
+#featured-position1 > p, #featured-position2 > p, #featured-position3 > p, #featured-position4 > p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+
+/* Each box positions (Top-Left, Top-Right, Bottom-Left, Bottom-Right) */
+#featured-position1 {
+  left: 0;
+  top: 0;
+
+} #featured-position2 {
+  right: 0;
+  top: 0;
+
+} #featured-position3 {
+  left: 0;
+  bottom: 10px;
+
+} #featured-position4 {
+  right: 0;
+   bottom: 10px;
+
+}
+
+
+/* Styling Div for content */
+.featured-content {
+  background-color: #e8eaf1;
+  border: 1px solid #e8eaf1;
+  height: 100%;
+}
+
+
+/* Give content some spacing from left border */
+.featured-content p {
+  margin-left: 20px;
+  text-align: justify;
+  display: block;
+  color: #6a6760;
+  width: 350px;
+  text-align: justify;
+}
+
+.featured-content h3 {
+  width: auto;
+  margin-left: 20px;
+}
+
+
+/* text: Visit Page style */
+.featured-content a {
+  color: #3366BB;
+  font-weight: bold;
+}
+
+
+/* Attraction Image style (right side of content) */
+.attraction-image {
+  float: right;
+  height: 170px;
+  width: 170px;
+  margin-top: 65px;
+  padding-left: 10px;
+}
+
+
+/*****************************************************************
+************************* Footer Section *************************
+*****************************************************************/
+
+/* Main Div */
+#footer-section {
+  position: relative;
+  background-color: #0f7ba2;
+  height: 250px;
+  margin-top: 40px;
+  font-family: verdana;
+  line-height: 1.8em;
+}
+
+
+/* Left float section (Explore Indiana and everything under it) */
+#footer-section h3, #footer-section-login h3 {
+  padding: 30px 0 20px 110px;
+}
+
+/* List style */
+#footer-section ul, #footer-section-login ul {
+  float: left;
+  margin: -30px 0 0 122px;
+  list-style-type: none;
+  padding: 0;
+
+/* List-style Link decorations */
+} #footer-section ul li a, #footer-section-login ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-shadow: 2px 3px 4px #cccccc;
+
+} #footer-section ul li a:hover, #footer-section-login ul li a:hover {
+  font-weight: bold;
+
+}
+/* END Left float section */
+
+
+/* Indiana Flag - centered right */
+#flag {
+  position: absolute;
+  right: 3%;
+  top: 20%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* INDIANA image centered */
+#logo {
+  position: absolute;
+  left: 36%;
+  top: 20%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Assignment specific text requirement */
+footer {
+  background-color: #0f7ba2;
+  text-align: center;
+
+} footer a {
+  color: white; /* Make link standout */
+
+}
+
+
+/*****************************************************************
+************************** About Us  *****************************
+*****************************************************************/
+
+/* Main Div */
+#background-about-us {
+  position: relative;
+  background-image: url("../img/wallpaper2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+
+.about-us h1 {
+  font-size: 40px;
+}
+
+
+
+.about-us {
+  color: #6a6760;
+  width: 700px;
+  text-align: justify;
+}
+
+
+#greetings {
+  height: 443px;
+  width: 690px;
+}
+
+
+#Indianapolis {
+  float: right;
+  height: 773px;
+  width: 400px;
+  margin-right: -450px;
+}
+
+
+/*****************************************************************
+*********************** Attraction Pages *************************
+*****************************************************************/
+
+/* Main Outer Div Structure */
+#plain-background {
+  background: #e8eaf1;
+  width: 100%;
+  display: table;
+}
+
+
+/* Main Inner Div */
+#container {
+  font-family: verdana;
+  margin: 0 auto;
+  width: 1150px;
+  color: #6a6760;
+}
+
+
+#container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+#container p {
+  color: #6a6760;
+  width: 95%;
+}
+
+
+/* Main Attraction Title */
+#title {
+  height: 100px;
+  width: 100%;
+}
+
+
+/* Main Image */
+#highlight {
+  position: relative;
+  float: left;
+  height: 525px;
+  width: 720px;
+}
+
+
+/* Two column styles */
+#left, #right {
+  display: table-cell;
+  color: #6a6760;
+}
+
+
+/* Left Column */
+#left {
+  float: left;
+  width: 80%;
+  text-align: justify;
+  height: 100%;
+}
+
+#description {
+  display: block;
+}
+
+
+iframe {
+  border: 0;
+}
+
+
+.button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #4479BA;
+  color: #FFF;
+  padding: 8px 12px;
+  margin: 8px 0;
+  text-decoration: none;
+}
+
+
+/* Button: Visit Website */
+#left button, #right button {
+  margin: 25px 0 10px 0;
+  font-size: 1em;
+  color: #fff;
+  padding: 1em 1.5em;
+  text-align: center;
+  display: inline-block;
+  border: 4px solid transparent;
+  background: #0f7ba2;
+  border-color: #0f7ba2;
+
+} #left button:hover, #right button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 1px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
+/* Right column */
+#right {
+  float: right;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+/* text: Plan Your Trip */
+#right h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+
+/* Override link color */
+.link {
+  color: blue;
+  text-decoration: underline;
+  padding-bottom: 3px;
+}
+
+
+/* Hours of Operation section */
+#right ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+
+/* Map Section */
+#location {
+  margin: 0 auto;
+  width: 1150px;
+  height: 310px;
+  padding: 25px 0 45px 0;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+
+.maps {
+  border: 2px solid blue;
+}
+
+
+
+
+/*****************************************************************
+************************** Login Page ****************************
+*****************************************************************/
+
+
+#plain-background-login {
+  background-image: url("../img/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#login {
+	position: absolute;
+	top: 60%; /* Center vertically */
+	left: 50%; /* Center horizontally */
+	transform: translate(-50%, -50%); /* Readjust center */
+	width: 300px;
+}
+
+
+#login-seal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100%;
+  margin: 0 auto;
+  resize: both;
+}
+
+
+#login-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+
+form {
+  z-index: 1;
+}
+
+
+fieldset {
+	margin: 0;
+	padding: 20px;
+  border: none;
+    margin: auto;
+}
+
+
+legend {
+  text-align: center;
+}
+
+
+input[id=username], input[id=password] {
+	background-repeat: no-repeat;
+	text-indent: 30px;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+	font-family: verdana;
+	font-size: 16px;
+
+} input[id=username]:focus, input[id=password]:focus {
+	background-image: none;
+	text-indent: 0;
+
+}	input[id=username] {
+	background-image: url(../img/user.png);
+
+}	input[id=password] {
+	background-image: url(../img/password.png);
+
+/* Login Button */
+} input[id=submit2] {
+	padding: 5px;
+	width: 50%;
+	border-radius: 0;
+
+/* Form Submit Buton */
+} input[id=submit] {
+	padding: 5px;
+	width: 100%;
+	border-radius: 0;
+}
+
+
+.webaccess {
+  color: white;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 30px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+.white {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+
+.logout:hover {
+    text-shadow: 2px 3px 4px #999999;
+}
+
+
+.drop-down {
+  position: relative;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fde073;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow:    0 0 5px black;
+  box-shadow:         0 0 5px black;
+}
+/* index.php image:start */
+#seal{
+  height:115px; width:135px;
+}
+
+#stateLogo{
+  height:150px; width:320px;
+}
+#stateFlag{
+  height:150px; width:300px;
+}
+/* index.php image:end */
+
+/* About-Us.php image:start */
+#indianapolisCity{
+height:773px; width:400px;
+}
+/* About-Us.php image:end */
+
+/* 3 Attraction Page image:start */
+#dunes,#bambole,#childrenZoo{
+height:385px; width:874px;
+}
+.maps{
+height:350px; width:1147px;
+}
+/* Indiana-Dunes.php image:end */
+
+/*start : comment page css */
+.comment {
+  width: 430px;
+  padding: 8px 10px;
+  margin-bottom: 30px;
+}
+
+.post-comment {
+  float: left;
+}
+
+blockquote {
+  float: right;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea {
+  border: 4px solid rgba(0,0,0,0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#date{
+  font-size:10px; 
+  margin-top:-50px;
+}
+/*end: comment page css */
