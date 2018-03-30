@@ -1,14 +1,19 @@
 <!--To-Do: figure out global variables, header, footer-->
 <!--img source: http://www.kansastravel.org/gardenofeden.htm-->
 <!DOCTYPE html>
-<?php echo Asset::img('gardenofeden.jpg', array('class' => 'centerPic')); ?>
-<p id=infot>Garden of Eden - Image from <a href="https://www.kansastravel.org/gardenofeden.htm">www.kansastravel.org</a>
+<?php echo Asset::img('childrenzoo.jpg', array('class' => 'centerPic')); ?>
+<p id=infot>Fort Wayne Zoo - Image from <a href="https://www.eiteljorg.org">www.eiteljorg.org</a>
 
 <p id='infot'>
-S.P. Dinsmoor, a retired schoolteacher and Civil War veteran, began building a unique 11-room log cabin, with logs up to 27 feet long in 1891. In 1907, he finished and then began building the garden that would surround his him for the next 22 years. This garden was built from 113 tons of concrete and limestone, telling the story of the world's creation. There is plenty of variety to see and experience, from the 150 and more figures, various insects, and 40 foot-tall trees. Although the open hours at the Garden of Eden are limited, many of the attractions this has to offer can be seen from the outside as well. It is certainly a worthwhile visit!
+Be ready to be involved with the experience of a lifetime with
+            African continent's animal.If your kids love Disney Movie "The
+            Lion King", they will love this exibit. Some of the Animals include
+            lions, hyenas and honey badger etc. We also have fun Safari ride
+            that gives your aerial view of the beautiful African Animals.</p>
+        <h3>Australian Adventure</h3>
 </p>
 
-   <form name="commentbox" method="post" id = 'tinput' action="gardenofeden.php">
+   <form name="commentbox" method="post" id = 'tinput' action="eiteljorg.php">
         <textarea name="field" rows="5"></textarea>
         <input type="hidden" value="done" name="comment_in">
         <input type="submit" id = "but" value="Comment">

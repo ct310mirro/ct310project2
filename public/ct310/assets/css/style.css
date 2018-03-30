@@ -31,7 +31,7 @@ img:hover {
     box-shadow: 0 1px 1px 1px rgba(0, 120, 170, 0.5);
 }
 
-#twine {
+.centerPic {
 position:relative;
 padding: auto;
 border: 2px radius #ddd;
@@ -55,24 +55,4 @@ float: center;
 textarea {
 width :80%;
 }
-
-#lion {
-position:relative;
-padding: auto;
-border: 2px radius #ddd;
-border-radius: 2px;
-width: 70%;
-height: 70%;
-float: center;
-}
-
-
-#eden  {
-position:relative;
-padding: 1rem;
-border: 2px radius #ddd;
-border-radius: 2px;
-width: 70%;
-height: 70%;
-float: center;
 

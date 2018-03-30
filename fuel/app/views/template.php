@@ -19,7 +19,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark  bg-dark fixed-top" style="background-color: #e3f2fd;" >
-      <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Kansas">KANSAS</a>
+      <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Kansas">KANSAS and INDIANA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,6 +39,9 @@
               <a class="dropdown-item" href="<?=Uri::create('index.php/posts/twine.php'); ?>">Largest Ball of Twine</a>
               <a class="dropdown-item" href="<?=Uri::create('index.php/posts/zoo.php'); ?>">Safari Zoological Park</a>
 	      <a class="dropdown-item" href="<?=Uri::create('index.php/posts/gardenofeden.php'); ?>">Garden of Eden</a>
+        <a class="dropdown-item" href="<?=Uri::create('index.php/posts/indianadunes.php'); ?>">Indiana Dunes</a>
+        <a class="dropdown-item" href="<?=Uri::create('index.php/posts/eiteljorg.php'); ?>">Eiteljorg Museum</a>
+        <a class="dropdown-item" href="<?=Uri::create('index.php/posts/fortwaynezoo.php'); ?>">Fort Wayne Zoo</a>
 	     
             </div>
           </li>

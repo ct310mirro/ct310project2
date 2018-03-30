@@ -10,10 +10,10 @@
 	    	<form action="checkLogin" method="POST" accept-charset="UTF-8" role="form">
                   <fieldset>
 	    	  	<div class="form-group">
-	    		    <input class="form-control" placeholder="Username" name="username" type="text">
+	    		    <input class="form-control" placeholder="Username" name="username" type="text" required>
 	    		</div>
 	    		<div class="form-group">
-	    			<input class="form-control" placeholder="Password" name="password" type="password" value="">
+	    			<input class="form-control" placeholder="Password" name="password" type="password" value="" required>
 	    		</div>
 	   	   	<input class="btn btn-lg btn-block" type="submit" value="Login">
 	    	</fieldset>

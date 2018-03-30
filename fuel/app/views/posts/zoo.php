@@ -1,4 +1,4 @@
-<?php echo Asset::img('lion.jpg', array('id' => 'lion')); ?>
+<?php echo Asset::img('lion.jpg', array('class' => 'centerPic')); ?>
 <p id=infot>Sammy the Lion - Image from <a href="https://www.tripadvisor.com/Attraction_Review-g38607-d2707230-Reviews-Safari_Zoological_Park-Caney_Kansas.html#photos;aggregationId=101&albumid=101&filter=7&ff=264747873"> www.tripadvisor.com </a> </p>
 
 <p id = zinfo> 

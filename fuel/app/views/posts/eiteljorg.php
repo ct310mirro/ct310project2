@@ -1,7 +1,7 @@
 <!--To-Do: figure out global variables, header, footer-->
 <!--img source: http://www.kansastravel.org/gardenofeden.htm-->
 <!DOCTYPE html>
-<?php echo Asset::img('gardenofeden.jpg', array('id' => 'eden')); ?>
+<?php echo Asset::img('bambole.jpg', array('class' => 'centerPic')); ?>
 <p id=infot>Eiteljorg Museum of American Indians and Western Art - Image from <a href="https://www.eiteljorg.org">www.eiteljorg.org</a>
 
 <p id='infot'>

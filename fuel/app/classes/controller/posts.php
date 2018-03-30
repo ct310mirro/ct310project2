@@ -28,6 +28,22 @@ class Controller_Posts extends Controller_Template{
 		$this->template->title = 'Garden of Eden';
 		$this->template->content = View::forge('posts/gardenofeden', $data);
 	}
+	public function action_indianadunes() {
+		$data = array();
+		$this->template->title = 'Indiana Dunes';
+		$this->template->content = View::forge('posts/indianadunes', $data);
+	}
+	public function action_eiteljorg() {
+		$data = array();
+		$this->template->title = 'Eiteljorg Museum';
+		$this->template->content = View::forge('posts/eiteljorg', $data);
+	}
+	public function action_fortwaynezoo() {
+		$data = array();
+		$this->template->title = 'Fort Wayne Zoo';
+		$this->template->content = View::forge('posts/fortwaynezoo', $data);
+	}
+
 	
 	public function action_aboutus() {
 		$data = array();
@@ -50,8 +66,12 @@ class Controller_Posts extends Controller_Template{
 		$data = array();
 		$username = Input::post('username');
 		$password = Input::post('password');
+		//username and password same for now
+		$ct310 = $username === 'ct310' && md5($password) === '48f2f942692b08ec9de1ef9ada5230a3';
+		$user1 = $username === 'mirro' && md5($password) === '0209aedc6c35bdcbbf26e93744c98175';
+		$user2 = $username === 'saurav' && md5($password) === '8cf674180ea201eb14b12486eaef9f28';
 
-		if($username === 'ct310' && md5($password) === '48f2f942692b08ec9de1ef9ada5230a3'|| ($username === 'testuser' && md5($password) === 'd0763edaa9d9bd2a9516280e9044d885') || ($username === 'abhi' && md5($password) === 'bd95b36734f53e4261f9d7c60748570c') || ($username === 'antonio' && md5($password) === 'b148d6780c3158de9fc83cdd27cfb0c5'))
+		if($ct310 || $user1 || $user2 )
 		{
 			Session::create(); 
 			Session::set('username', $username);

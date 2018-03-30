@@ -1,14 +1,16 @@
 <!--To-Do: figure out global variables, header, footer-->
 <!--img source: http://www.kansastravel.org/gardenofeden.htm-->
 <!DOCTYPE html>
-<?php echo Asset::img('gardenofeden.jpg', array('class' => 'centerPic')); ?>
-<p id=infot>Garden of Eden - Image from <a href="https://www.kansastravel.org/gardenofeden.htm">www.kansastravel.org</a>
+<?php echo Asset::img('indianadunes.jpg', array('class' => 'centerPic')); ?>
+<p id=infot>indiana Dunes - Image from <a href="https://www.eiteljorg.org">www.eiteljorg.org</a>
 
 <p id='infot'>
-S.P. Dinsmoor, a retired schoolteacher and Civil War veteran, began building a unique 11-room log cabin, with logs up to 27 feet long in 1891. In 1907, he finished and then began building the garden that would surround his him for the next 22 years. This garden was built from 113 tons of concrete and limestone, telling the story of the world's creation. There is plenty of variety to see and experience, from the 150 and more figures, various insects, and 40 foot-tall trees. Although the open hours at the Garden of Eden are limited, many of the attractions this has to offer can be seen from the outside as well. It is certainly a worthwhile visit!
+Explore the beautfiful nature of Indiana Dunes. Relax on the beach
+            or take a calm walk in the Indiana Dunes State Park. People are often
+            suprised by the majestic offering of the Indiana Dunes.
 </p>
 
-   <form name="commentbox" method="post" id = 'tinput' action="gardenofeden.php">
+   <form name="commentbox" method="post" id = 'tinput' action="indianadunes.php">
         <textarea name="field" rows="5"></textarea>
         <input type="hidden" value="done" name="comment_in">
         <input type="submit" id = "but" value="Comment">
