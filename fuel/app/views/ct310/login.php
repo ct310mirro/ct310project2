@@ -26,8 +26,8 @@
     <form id='login' action='checkLogin' method='POST' accept-charset='UT0-8'>
       <fieldset>
         <h1 class="webaccess center">WebAccess</h1>
-        <input type='text' name='username' id='username'  maxlength='50' placeholder='username'>
-        <input type='password' name='password' id='password' maxlength='50' placeholder='password'>
+        <input type='text' name='username' id='username'  maxlength='50' placeholder='username' required>
+        <input type='password' name='password' id='password' maxlength='50' placeholder='password' required>
         <input type='submit' value='Log In' id='submit'>
         <p class="center"><?php echo Html::anchor('ct310', 'Back to Main Site', array('class' => 'white'));?></p>
         
