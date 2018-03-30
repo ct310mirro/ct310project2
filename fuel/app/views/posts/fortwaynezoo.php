@@ -13,7 +13,7 @@ Be ready to be involved with the experience of a lifetime with
         <h3>Australian Adventure</h3>
 </p>
 
-   <form name="commentbox" method="post" id = 'tinput' action="eiteljorg.php">
+   <form name="commentbox" method="post" id = 'tinput' action="fortwaynezoo.php">
         <textarea name="field" rows="5"></textarea>
         <input type="hidden" value="done" name="comment_in">
         <input type="submit" id = "but" value="Comment">
