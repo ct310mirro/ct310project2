@@ -70,8 +70,11 @@ class Controller_Federation extends Controller_Template{
 		$this->template->content = $view;
 	}
 
-	public function action_attrimage($imagename) {
-		$image = $imagename;
+	public function action_attrimage($imageid) {
+		$demos = Posts::find($imageid);
+		$cc = $demos->image;
+		return Asset::img($cc, array('class' => 'centerPic'));
+		
 	
 		$data = array();
 
