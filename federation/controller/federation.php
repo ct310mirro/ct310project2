@@ -37,12 +37,13 @@ class Controller_Federation extends Controller_Template{
 	}
 
 	public function action_listing() {
-		$arr = array(array('id' => "10",'name' => "Eiteljorg Museum of American Indians and Western Art", 'state' => "IN"), 
-					array('id' => "20",'name' => "Largest Twine Ball in the World	", 'state' => "KS"),
-					array('id' => "30",'name' => "Garden of Eden", 'state' => "KS"),
-					array('id' => "40",'name' => "Safari Zoological Zoo", 'state' => "KS"),
-					array('id' => "50",'name' => "Fort Wayne Zoo", 'state' => "IN"),
-					array('id' => "60",'name' => "Indiana Dunes", 'state' => "IN"));
+	$demos = Posts::find("all");
+
+		$arr = array();
+
+		foreach ($demos as $list){
+			array_push($arr,array('id' => $list->id,'name' => $list->title, 'state' => "KS"));
+		}
 		$run = Format::forge($arr)->to_json();
 
 		return $run;
