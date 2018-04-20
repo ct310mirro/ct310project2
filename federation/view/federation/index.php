@@ -10,7 +10,7 @@
 	<?php  
     
     foreach($demos as $attid): ?>
-		<a href="<?=Uri::create('index.php/federation/attrimage/'.$attid->image); ?>">
+		<a href="<?=Uri::create('index.php/federation/attrimage/'.$attid->id); ?>">
 			<?php echo $attid->image; ?>
 		</a><br />
 	<?php endforeach; ?>
