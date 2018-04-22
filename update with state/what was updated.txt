@@ -1,0 +1,6 @@
+In Query: added state when creating and inserting "attraction" table.
+In Model:(Model/Posts- added state in static $_properties)
+In controller: (controller/posts.php -added state in addAttraction action)
+	        (controller/federation.php -added state in listing and attraction action. The state is updated dynamically now).
+In view : (view/attraction.php -added state name above the attraction body.)
+	  (view/addAttraction.php -added state input and added placeholder for all input).
