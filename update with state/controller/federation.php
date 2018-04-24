@@ -75,7 +75,9 @@ class Controller_Federation extends Controller_Template{
 	public function action_attrimage($imageid) {
 		$demos = Posts::find($imageid);
 		$cc = $demos->image;
-		return Asset::img($cc);
+		$response = Response::forge(file_get_contents(Asset::get_file($cc, 'img')));
+		$response->set_header('Content-Type', 'image/jpeg');
+		return $response;
 		
 	
 		$data = array();
