@@ -37,13 +37,14 @@ class Controller_Federation extends Controller_Template{
 	}
 
 	public function action_listing() {
-	$demos = Posts::find("all");
+		$demos = Posts::find("all");
 
 		$arr = array();
 
 		foreach ($demos as $list){
-			array_push($arr,array('id' => $list->id,'name' => $list->title, 'state' => "KS"));
+			array_push($arr,array('id' => $list->id,'name' => $list->title, 'state' => $list->state));
 		}
+
 		$run = Format::forge($arr)->to_json();
 
 		return $run;
@@ -58,7 +59,7 @@ class Controller_Federation extends Controller_Template{
 
 	public function action_attraction($s) {
 		$demos = Posts::find($s);
-		$arr = array(array('id' => $demos->id,'name' => $demos->title, 'desc' => $demos->body, 'state' => "IN"));
+		$arr = array(array('id' => $demos->id,'name' => $demos->title, 'desc' => $demos->body, 'state' => $demos->state));
 		$run = Format::forge($arr)->to_json();
 
 		return $run;
@@ -74,7 +75,9 @@ class Controller_Federation extends Controller_Template{
 	public function action_attrimage($imageid) {
 		$demos = Posts::find($imageid);
 		$cc = $demos->image;
-		return Asset::img($cc, array('class' => 'centerPic'));
+		$response = Response::forge(file_get_contents(Asset::get_file($cc, 'img')));
+		$response->set_header('Content-Type', 'image/jpeg');
+		return $response;
 		
 	
 		$data = array();
