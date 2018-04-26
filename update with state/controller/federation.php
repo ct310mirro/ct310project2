@@ -59,7 +59,7 @@ class Controller_Federation extends Controller_Template{
 
 	public function action_attraction($s) {
 		$demos = Posts::find($s);
-		$arr = array(array('id' => $demos->id,'name' => $demos->title, 'desc' => $demos->body, 'state' => $demos->state));
+		$arr = array('id' => $demos->id,'name' => $demos->title, 'desc' => $demos->body, 'state' => $demos->state);
 		$run = Format::forge($arr)->to_json();
 
 		return $run;
