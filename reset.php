@@ -27,7 +27,7 @@ class Controller_Reset extends Controller_Template
 		
 		$key = Resetpass::generateRandomString(10);
 
-		$str = Uri::create('/reset/:some', array('some' => 'passreset', 'and' => $key), array('vref' =>':and'));
+		$str = Uri::create('/index.php/reset/:some', array('some' => 'passreset', 'and' => $key), array('vref' =>':and'));
 		
 			
 		
